@@ -9,12 +9,18 @@
 using namespace std;
 using namespace sf;
 
-const int N = 20, M = 20;
-const int SIZE = 30;
+const int N = 20;
+const int SIZE = 16;
 const int w = SIZE * N;
-const int h = SIZE * M;
+const int title = 48;
+const int border = 15;
 
-RenderWindow window(VideoMode(w, h), "Snake Game");
+const string _BACKGROUND = "images/background.png";
+const string _SNAKE = "images/snake.png";
+const string _APPLE = "images/apple.png";
+const string _FONT = "arial.ttf";
+
+RenderWindow window(VideoMode(w + border, title + w + border), "Snake Game");
 
 #include "Fruit.h"
 #include "Snake.h"

@@ -1,22 +1,21 @@
 #pragma once
 class Fruit {
-private:
-	pair<int, int> position;
 public:
-	Fruit() : position({0, 0}) {}
+	pair<int, int> position;
+	Fruit() : position({10, 10}) {}
 
 	void NewFruit() {
 		srand((int)time(NULL));
-		position.first = rand() % 20;
-		position.second = rand() % 20;
+		position.first = rand() % N;
+		position.second = rand() % N;
 	}
 
-	void Show(Sprite s) {
-		s.setPosition(position.first * SIZE, position.second * SIZE);
-		window.draw(s);
-	}
-
-	bool IsReachedFruit(int& x, int& y) {
-		return (x == position.first && y == position.second);
+	bool IsReachedFruit(vector<pair<int, int>> &snake) {
+		for (int i = 0; i < snake.size(); i++) {
+			if (position.first == snake[i].first && position.second == snake[i].second) 
+				return true;
+		}
+		
+		return false;
 	}
 };

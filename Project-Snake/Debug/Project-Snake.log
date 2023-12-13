@@ -1,9 +1,12 @@
 ﻿  Project-Snake.cpp
-D:\vic\Coding\Project-Snake\Project-Snake\Fruit.h(18,56): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\vic\Coding\Project-Snake\Project-Snake\Fruit.h(18,32): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\vic\Coding\Project-Snake\Project-Snake\Snake.h(31,57): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\vic\Coding\Project-Snake\Project-Snake\Snake.h(31,33): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\vic\Coding\Project-Snake\Project-Snake\Game.h(5,28): warning C4305: '正在初始化': 從 'double' 轉換為 'float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
-D:\vic\Coding\Project-Snake\Project-Snake\Game.h(28,44): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\vic\Coding\Project-Snake\Project-Snake\Game.h(28,34): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-  Project-Snake.vcxproj -> D:\vic\Coding\Project-Snake\Debug\Project-Snake.exe
+D:\vic\github\Project-Snake\Project-Snake\Fruit.h(14,21): warning C4018: '<': signed/unsigned 不相符
+D:\vic\github\Project-Snake\Project-Snake\Game.h(5,31): warning C4305: '正在初始化': 從 'double' 轉換為 'float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\Game.h(5,44): warning C4305: '正在初始化': 從 'double' 轉換為 'float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\Game.h(38,57): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\Game.h(38,43): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\Game.h(44,68): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\Game.h(44,54): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\Game.h(48,64): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\Game.h(48,50): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\Game.h(66,32): warning C4244: 'return': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+  Project-Snake.vcxproj -> D:\vic\github\Project-Snake\Debug\Project-Snake.exe

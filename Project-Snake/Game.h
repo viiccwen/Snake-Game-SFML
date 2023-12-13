@@ -2,35 +2,56 @@
 
 class Game {
 private:
-    float timer = 0, delay = 0.1;
+    float timer = 0, interval = 0.3, speed = 0.3;
+    int speedup = N / 5;
+    int score = 0;
 
-    Texture background, snakeColor;
+    Texture background, snakeColor, appleColor;
     
-    Sprite s1;
-    Sprite s2;
+    Sprite s_backgound;
+    Sprite s_snake;
+    Sprite s_apple;
+
+    Font font;
+    Text text;
 
     Snake snake;
-    Fruit fruit;
+    Fruit apple;
     Clock clock;
 public:
     Game() {
-        background.loadFromFile("images/background.jpg");
-        snakeColor.loadFromFile("images/red.jpg");
+        background.loadFromFile(_BACKGROUND);
+        snakeColor.loadFromFile(_SNAKE);
+        appleColor.loadFromFile(_APPLE);
 
-        s1.setTexture(background);
-        s2.setTexture(snakeColor);
+        s_backgound.setTexture(background);
+        s_snake.setTexture(snakeColor);
+        s_apple.setTexture(appleColor);
+
+        font.loadFromFile(_FONT);
     }
 
     void draw() {
         window.clear();
         for (int i = 0; i < N; i++) {
-            for (int j = 0; j < M; j++) {
-                s1.setPosition(i * SIZE, j * SIZE);
-                window.draw(s1);
+            for (int j = 0; j < N; j++) {
+                s_backgound.setPosition(i * SIZE, title + j * SIZE);
+                window.draw(s_backgound);
             }
         }
-        snake.Show(s2);
-        fruit.Show(s2);
+
+        for (int i = 0; i < snake.length; i++) {
+            s_snake.setPosition(snake.snake[i].first * SIZE, title + snake.snake[i].second * SIZE);
+            window.draw(s_snake);
+        }
+
+        s_apple.setPosition(apple.position.first * SIZE, title + apple.position.second * SIZE);
+        window.draw(s_apple);
+
+        SetupTitleText(text, font, "Score: " + to_string(score), 14, Color::White);
+        text.setPosition(10 , SIZE);
+        window.draw(text);
+
         window.display();
     }
 
@@ -41,14 +62,19 @@ public:
         if (Keyboard::isKeyPressed(Keyboard::Right) && snake.direction != snake.LEFT) snake.direction = snake.RIGHT;
     }
 
+    float SpeedLevel() {
+        return score / speedup > 0 ? interval * 4 / 5 : 0.3;
+    }
+
     void TimeSetup() {
         float time = clock.getElapsedTime().asSeconds();
         clock.restart();
         timer += time;
 
-        if (timer > delay) {
+        if (timer > speed) {
             timer = 0;
-            snake.Tick(fruit);
+            snake.Tick(apple, score);
+            speed = SpeedLevel();
         }
     }
 
@@ -60,6 +86,13 @@ public:
             if (e.type == Event::Closed)
                 window.close();
         }
+    }
+
+    void SetupTitleText(Text &text, Font &font, string str, int fontsize, Color fillcolor) {
+        text.setFont(font);
+        text.setString(str);
+        text.setCharacterSize(fontsize);
+        text.setFillColor(fillcolor);
     }
 
 	void game() {
