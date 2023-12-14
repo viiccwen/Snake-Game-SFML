@@ -8,7 +8,7 @@
 
 1.先`clone`下來
 ```git=
-git clone https://github.com/viiccwen/Snake-SFML.git
+git clone https://github.com/viiccwen/Snake-Game-SFML.git
 ```
 
 2. 進入clone下來的資料夾
@@ -19,3 +19,4 @@ git clone https://github.com/viiccwen/Snake-SFML.git
 ## 更新紀錄
 * v0.0.1 - 基礎功能佈建完成
 * v0.0.2 - 新增計分功能、更新皮膚
+* v0.0.3 - 新增主頁選單、音效
