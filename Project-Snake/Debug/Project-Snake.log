@@ -1,12 +1,102 @@
 ﻿  Project-Snake.cpp
-D:\vic\github\Project-Snake\Project-Snake\Fruit.h(14,21): warning C4018: '<': signed/unsigned 不相符
-D:\vic\github\Project-Snake\Project-Snake\Game.h(5,31): warning C4305: '正在初始化': 從 'double' 轉換為 'float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
-D:\vic\github\Project-Snake\Project-Snake\Game.h(5,44): warning C4305: '正在初始化': 從 'double' 轉換為 'float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
-D:\vic\github\Project-Snake\Project-Snake\Game.h(38,57): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\vic\github\Project-Snake\Project-Snake\Game.h(38,43): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\vic\github\Project-Snake\Project-Snake\Game.h(44,68): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\vic\github\Project-Snake\Project-Snake\Game.h(44,54): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\vic\github\Project-Snake\Project-Snake\Game.h(48,64): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\vic\github\Project-Snake\Project-Snake\Game.h(48,50): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-D:\vic\github\Project-Snake\Project-Snake\Game.h(66,32): warning C4244: 'return': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\src\Perameter.h(9,32): warning C4305: '正在初始化': 從 'double' 轉換為 'float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\src\Perameter.h(9,45): warning C4305: '正在初始化': 從 'double' 轉換為 'float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\src\Fruit.h(14,21): warning C4018: '<': signed/unsigned 不相符
+D:\vic\github\Project-Snake\Project-Snake\src\Game.h(39,57): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\src\Game.h(39,43): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\src\Game.h(45,68): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\src\Game.h(45,54): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\src\Game.h(49,64): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\src\Game.h(49,50): warning C4244: '引數': 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\src\Game.h(80,32): warning C4244: 'return': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+D:\vic\github\Project-Snake\Project-Snake\src\Menu.h(33,90): warning C4244: '引數': 將 'T' 轉換為 'T'，由於類型不同，可能導致資料遺失
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\vic\github\Project-Snake\Project-Snake\src\Menu.h(33,73): warning C4244: '引數': 將 'T' 轉換為 'T'，由於類型不同，可能導致資料遺失
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\vic\github\Project-Snake\Project-Snake\src\Menu.h(37,98): warning C4244: '引數': 將 'T' 轉換為 'T'，由於類型不同，可能導致資料遺失
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\vic\github\Project-Snake\Project-Snake\src\Menu.h(37,81): warning C4244: '引數': 將 'T' 轉換為 'T'，由於類型不同，可能導致資料遺失
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\vic\github\Project-Snake\Project-Snake\src\Menu.h(41,98): warning C4244: '引數': 將 'T' 轉換為 'T'，由於類型不同，可能導致資料遺失
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\vic\github\Project-Snake\Project-Snake\src\Menu.h(41,81): warning C4244: '引數': 將 'T' 轉換為 'T'，由於類型不同，可能導致資料遺失
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\vic\github\Project-Snake\Project-Snake\src\Menu.h(66,92): warning C4244: '引數': 將 'T' 轉換為 'T'，由於類型不同，可能導致資料遺失
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\vic\github\Project-Snake\Project-Snake\src\Menu.h(66,75): warning C4244: '引數': 將 'T' 轉換為 'T'，由於類型不同，可能導致資料遺失
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\vic\github\Project-Snake\Project-Snake\src\Menu.h(70,96): warning C4244: '引數': 將 'T' 轉換為 'T'，由於類型不同，可能導致資料遺失
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\vic\github\Project-Snake\Project-Snake\src\Menu.h(70,79): warning C4244: '引數': 將 'T' 轉換為 'T'，由於類型不同，可能導致資料遺失
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
   Project-Snake.vcxproj -> D:\vic\github\Project-Snake\Debug\Project-Snake.exe
